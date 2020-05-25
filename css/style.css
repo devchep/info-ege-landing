@@ -1,0 +1,363 @@
+@media (max-width: 1365px) {
+    transform: scale(0.75%);;
+}
+/* goblin-one-regular - latin */
+@font-face {
+    font-family: 'Goblin One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Goblin One'), local('GoblinOne'),
+         url('../fonts/goblin-one-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/goblin-one-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* source-sans-pro-regular - cyrillic */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+         url('../fonts/source-sans-pro-v13-cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/source-sans-pro-v13-cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* source-sans-pro-700 - cyrillic */
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+         url('../fonts/source-sans-pro-v13-cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/source-sans-pro-v13-cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* exo-2-900 - cyrillic */
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Exo 2 Black'), local('Exo2-Black'),
+         url('../fonts/exo-2-v7-cyrillic-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/exo-2-v7-cyrillic-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* fix paddings */
+.html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 900;
+}
+/* Header section */
+.wrapper{
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 48px;
+}
+.section-header{
+    background-image: url('../img/header_img_mask.png'),
+    linear-gradient(180deg, #0085FF 20%, #CD3AD0 100%);
+    background-size: cover;
+}
+.header-section-inner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.section-inner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 80px;
+}
+.header_logo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.subject{
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+    color: white;
+    font-size: 30px;
+    line-height: 36px;
+}
+.slogan{
+    text-align: left;
+    padding-top: 95px;
+    padding-left: 20px;
+    color: white;
+    font-size: 40px;
+    line-height: 48px;
+}
+.message-decoration{
+    position: absolute;
+    top: 187px;
+    left: 507px;
+    
+}
+.point{
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 60px;
+    color: white;
+    font-size: 26px;
+    line-height: 31px;
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_item{
+    padding-right: 48px;
+}
+.header_item:last-child{
+    padding-right: 0px;
+}
+.header_link{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: black;
+    text-decoration: none;
+}
+.header_link-cta{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: black;
+    text-decoration: none;
+}
+.header_link:hover, .header_link:active{
+    color: #FB33FF;
+    outline: none;
+    text-decoration: underline;
+    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	content: "";
+	transition: width 0.3s ease-out
+}
+.header_link:focus{
+    outline: none;
+}
+.header_link-cta:hover, .header_link-cta:active{
+    color: #FB33FF;
+    outline: none;
+    text-decoration: underline;
+}
+.header_link-cta:focus{
+    outline: none;
+}
+.line {
+    border-left: 4px solid #000000;
+}
+.cta-button {
+    border: 0;
+    padding: 8px 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 20px;
+    font-family: 'Exo 2';
+    font-weight: 900;
+    color: white;
+    background: black;
+}
+.cta-button:hover, .cta-button:active{
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.7);
+    outline: none;
+}
+/* For whom section */
+.section-forwhom{
+    background: linear-gradient(180deg, #CD3AD1 0%, #0038FF 100%, #0038FF 100%);;
+}
+.forwhom-title{
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+    padding-top: 25px;
+}
+.forwhom-skills{
+    display: flex;
+}
+.skill-rectangle{
+    width: 330px;
+    height: 450px;
+    background: radial-gradient(50% 50% at 50% 50%, #002E72 0%, rgba(2, 12, 28, 0) 100%);
+    mix-blend-mode: normal;
+    border: 8px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+.first-level{
+    padding-top: 60px;
+    padding-left: 50px;   
+}
+.second-level{
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.third-level{
+    padding-top: 60px;
+    padding-right: 60px;
+}
+.skill-name{
+    position: relative;
+    left: 70px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 220px; 
+    height: 40px;
+    font-size: 24px;
+    z-index: 0;
+}
+.skill-name::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background: white;
+    transform: skew(-30deg);
+    z-index: -1;
+}
+.skill-description{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: 125px;
+    font-size: 24px;
+    width: 330px;
+    height: 200px;
+    background: white;
+}
+.section-plan{
+    background: linear-gradient(180deg, #0038FF 0%, #B255F5 100%);
+}
+.plan-title{
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+    padding-top: 30px;
+}
+.weeks-plan{
+    display: flex;
+    flex-direction: row;
+}
+.week-part-one{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.week-part-two{
+    display: flex;
+    flex-direction: column;
+    padding-top: 55px;
+    margin-left: 125px;
+}
+.week-rectangle{
+    width: 440px;
+    height: 240px;
+    border-radius: 20px;
+    background: white;
+    font-size: 20px;
+}
+.week-rectangle + .week-rectangle{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.week-number{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.week-program{
+    text-align: center;
+    margin-top: 15%;
+}
+.section-registration{
+    background: #B656F7;
+}
+.registration-title{
+    font-size: 40px;
+    color: white;
+    padding-top: 25px;
+}
+.registration-form{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type=text], select {
+    display: inline-block;
+    background: white;
+    margin: 0;
+    font-family: 'Exo 2';
+    font-size: 20px;
+    font-weight: 700;
+    padding: 24px 60px;
+    width: 420px;
+    border: 1px solid white;;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: visible;
+}
+.registration-form-input+.registration-form-input{
+    margin-top: 15%;
+}
+.registration-form-submit{
+    text-align: center;
+}
+input[type=submit]{
+    margin-top: 50px;
+    border: 0;
+    padding: 16px 40px;
+    font-size: 24px;
+    font-family: 'Exo 2';
+    font-weight: 900;
+    color: white;
+    background: black;
+}
+input[type=submit]:hover, input[type=submit]:active{
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.7);
+    outline: none;
+}
+footer{
+    display: flex;
+    align-items: center;
+    width: 100wh;
+    height: auto;
+    background: white;
+    padding: 25px;
+    font-size: 20px;
+    text-align: right;
+}
+footer a{
+    color: black;
+}
+footer p{
+    margin-left: 25px;
+}
